@@ -1,5 +1,4 @@
 import React from 'react';
-import {BrowserRouter as Router, Route} from "react-router-dom";
 import {Link} from "react-router-dom";
 import {Card,CardImg,CardImgOverlay, CardText, CardBody,CardTitle} from 'reactstrap';
 import Details from './DetailComponent.js'
@@ -21,7 +20,7 @@ import Details from './DetailComponent.js'
 
 
 
-      
+
       );
   
 
