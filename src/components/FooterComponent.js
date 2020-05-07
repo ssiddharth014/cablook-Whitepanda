@@ -12,20 +12,16 @@ function Footer (props){
                     <h5>Links</h5>
                     <ul className="list-unstyled">
 
-                         <li><Link to='/home'> Home</Link></li>
+                        <li><Link to='/home'> Home</Link></li>
                         <li><Link to='/aboutus'>About Us</Link></li>
                         <li><Link to='/menu'>Menu</Link></li>
                         <li><Link to='/contactus'>Contact Us</Link></li>
 
 
 
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
-                <div className="col-7 col-sm-5">
+             <div className="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
 		              121, Clear Water Bay Road<br />
