@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import {Card,CardImg,CardImgOverlay, CardText, CardBody,CardTitle} from 'reactstrap';
+
+import {Card,CardImg,CardImgOverlay, CardText, CardBody,CardTitle,Breadcrumb, BreadcrumbItem} from 'reactstrap';
 import Details from './DetailComponent.js'
 	
       function RenderMenuItem( {dish ,onClick}){
@@ -8,12 +9,14 @@ import Details from './DetailComponent.js'
 
   return(
 
-<Card onClick={()=>onClick(dish.id)}>
+<Card>
+<Link to ={`/menu/${dish.id}`} >
                               <CardImg  width="200%" src={dish.image} alt={dish.name}  />
                                  <CardImgOverlay body className=" ml-5 ">
                                  <CardTitle > {dish.name} </CardTitle>
                               
                               </CardImgOverlay>
+  </Link>
   </Card>
 
 
@@ -36,7 +39,7 @@ import Details from './DetailComponent.js'
                         return (
                               
                               <div key={dish.id} className="col-12 col-md-5 m-1">
-                              <RenderMenuItem dish={dish} onClick={props.onClick} />
+                              <RenderMenuItem dish={dish}  />
                               </div>
                               );
                   });
@@ -51,6 +54,15 @@ import Details from './DetailComponent.js'
 
 
                   <div className="container">
+                  <div className="row ">
+                  <Breadcrumb>
+                       <BreadcrumbItem><Link to='/home'>Home </Link> </BreadcrumbItem>
+                       <BreadcrumbItem active> Menu</BreadcrumbItem>
+                  </Breadcrumb>
+                  <div className="col-12">
+                  <h3>Menu</h3>
+                  </div>
+                  </div>
                         <div className="row ">
                          {menu}
                         </div>

@@ -40,6 +40,15 @@ class Main extends Component {
           />
         );
     }
+    const DishWithId = ({match})=>{
+      return (
+        <Details dish={this.state.dishes.filter((dish)=> dish.id===parseInt(match.params.dishId,10))[0]} 
+        comments={this.state.comments.filter((comment)=>comment.dishId===parseInt(match.params.dishId,10))}
+        />
+
+        );
+
+    }
   return (
 
     <div >
@@ -50,6 +59,7 @@ class Main extends Component {
   // above approach of passing component does not allow us to pass props
   // if we have to pass props along with the componenet then we have to bind it in as functional component
   <Route exact path="/menu" component={()=> <Menu dishes={this.state.dishes} />} />
+  <Route path="/menu/:dishId" component ={DishWithId} />
   <Route excat path="/contactus" component ={Contact} />
   <Redirect to="/home"  />
 </Switch>   
