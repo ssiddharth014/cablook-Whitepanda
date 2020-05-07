@@ -2,49 +2,42 @@ export const DISHES =
     [
         {
         id: 0,
-        name:'Santro',
-        image: "assets/images/0.png",
-        Number: 'DL87Y5F',
-        Model:'2016-VVX',
-        Rent:'550',
-        Color:'Peach',
-        bookingDetails:false,
-        user:"",
-        ph:"",
-        issue:"",
-        return:"",
-        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                     
+        name:'Uthappizza',
+        image: '/assets/images/0.png',
+        category: 'mains',
+        label:'Hot',
+        price:'4.99',
+        featured: true,
+        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                    
         },
         {
         id: 1,
-        name:'AMAZE',
-        image: 'assets/images/1.png',
-        Number: 'UP67T8F',
-        Model:'2019-VLX',
-        Rent:'700',
-        Color:'White',
-        bookingDetails:false,
-        user:"",
-        issue:"",
-        return:"",
-        
-        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                     
+        name:'Zucchipakoda',
+        image: '/assets/images/1.png',
+        category: 'appetizer',
+        label:'',
+        price:'1.99',
+        featured: false,
+        description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
         },
-         {
+        {
         id: 2,
-        name:'i 10',
-        image:"assets/images/2.png",
-         Number: 'MPI7T6L',
-        Model:'2017-lkX',
-        Rent:'450',
-        Color:'Blue',
-        bookingDetails:false,
-        user:"",
-        ph:"",
-        issue:"",
-        return:"",
-       
-
-        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                     
+        name:'Vadonut',
+        image: '/assets/images/2.png',
+        category: 'appetizer',
+        label:'New',
+        price:'1.99',
+        featured: false,
+        description:'A quintessential ConFusion experience, is it a vada or is it a donut?'
+        },
+        {
+        id: 3,
+        name:'ElaiCheese Cake',
+        image: '/assets/images/third.png',
+        category: 'dessert',
+        label:'',
+        price:'2.99',
+        featured: false,
+        description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
         }
     ];
