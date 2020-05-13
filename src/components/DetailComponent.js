@@ -11,10 +11,18 @@ const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
 const isNumber = (val) => !isNaN(Number(val));
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
-const dateObj= new Date();
-const month=dateObj.getUTCMonth() + 1;
-const day=dateObj.getUTCDate();
-const year=dateObj.getFullYear();
+let dateObj= new Date();
+let month=dateObj.getUTCMonth() + 1;
+if(month<10)
+{
+    month='0'+month;
+}
+let day=dateObj.getUTCDate();
+if(day<10)
+{
+    day='0'+day;
+}
+let year=dateObj.getFullYear();
 const date= year+'-'+month+'-'+day; 
 const isdate=(d)=>d && (d>=date);
  function RenderCar({car})
@@ -164,10 +172,25 @@ const isdate=(d)=>d && (d>=date);
       this.toggleModal();
       const x=document.getElementById('issue').value;
       const y=document.getElementById('return').value;
+      if(x<date)
+      {
+        window.alert("CANNOT BOOK FOR PAST DATES");
 
-      this.props.status(this.props.carId);
+      }
+      if(y<x)
+      {
+        window.alert('Return date cannot fall before issue date');
+      }
+
+      else if(x>=date && y>=x){
+        this.props.status(this.props.carId);
         this.props.addBooking(this.props.carId,values.firstname,values.lastname,
+        values.email,
         values.telnum,x,y);
+
+      }
+
+      
 
        
     }
@@ -233,7 +256,7 @@ const isdate=(d)=>d && (d>=date);
                                         placeholder="Tel. Number"
                                         className="form-control"
                                         validators={{
-                                            required, minLength: minLength(3), maxLength: maxLength(15), isNumber
+                                            required, minLength: minLength(3), maxLength: maxLength(12), isNumber
                                         }}
                                          />
                                     <Errors
@@ -243,7 +266,7 @@ const isdate=(d)=>d && (d>=date);
                                         messages={{
                                             required: 'Required',
                                             minLength: 'Must be greater than 2 numbers',
-                                            maxLength: 'Must be 15 numbers or less',
+                                            maxLength: 'Must be 12 charcters',
                                             isNumber: 'Must be a number'
                                         }}
                                      />
