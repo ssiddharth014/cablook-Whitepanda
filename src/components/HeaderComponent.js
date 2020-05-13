@@ -48,7 +48,7 @@ class Header extends Component{
               <div className="container">
               <NavbarToggler onClick={this.toggleNav} />
                <NavbarBrand className="mr-auto" href ="/"> 
-                  <img src="assets/images/third.png" height="30" width="41" alt="Logo iamge" />
+                  <img src="assets/images/1.png" height="30" width="41" alt="Logo iamge" />
                 </NavbarBrand>
                 <Collapse isOpen={this.state.isNavOpen} navbar>
                 <Nav navbar>
@@ -56,9 +56,7 @@ class Header extends Component{
                       <NavItem>
                                 <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
-                            </NavItem>
+                            
                             <NavItem>
                                 <NavLink className="nav-link"  to='/menu'><span className="fa fa-list fa-lg"></span> Menu</NavLink>
                             </NavItem>
@@ -69,7 +67,7 @@ class Header extends Component{
                 </Nav>
                   <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
+                                    <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg">Login</span></Button>
                                 </NavItem>
                             </Nav>
                 </Collapse>
@@ -79,9 +77,9 @@ class Header extends Component{
         <div className="container">
         <div className="row row-header">
         <div className="col-12 col-sm-6">
-        <h1>Siddharth Singh</h1>
-        <p> We take inspiration from world best cab bookers, drivers. our service will force you to book our cab again and again. Your idea of buying car will be forgotten.
-        </p>
+        <h1>White Panda</h1>
+        <p> White Panda is a managed marketplace for subject matter & branded communications
+        .</p><p>White Panda has a chance to enable 40 lakh plus digital businesses to be premium publishers.</p>
         </div>
         </div>
         </div>

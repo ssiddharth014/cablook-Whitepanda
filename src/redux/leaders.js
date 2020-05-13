@@ -1,8 +1,8 @@
-import { LEADERS } from '../shared/leaders';
-
-export const Leaders = (state = LEADERS, action) => {
-    switch (action.type) {
-        default:
-          return state;
-      }
-};
+import {LEADERS} from '../shared/leaders';
+//reduces function
+export const Leaders= (state=LEADERS,action) =>{
+	switch(action.type){
+		default :
+		return state;
+	}
+}

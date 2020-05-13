@@ -1,38 +1,13 @@
 export const LEADERS = [
     {
       id: 0,
-      name: 'Peter Pan',
-      image: '/assets/images/alberto.png',
-      designation: 'Chief Epicurious Officer',
-      abbr: 'CEO',
+      name: 'White Panda',
+      image: '/assets/images/logo.png',
+      designation: '',
+      abbr: '',
       featured: false,
-      description: "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
-    },
-    {
-      id: 1,
-      name: 'Dhanasekaran Witherspoon',
-      image: '/assets/images/alberto.png',
-      designation: 'Chief Food Officer',
-      abbr: 'CFO',
-        featured: false,
-      description: 'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!'
-      },
-    {
-      id: 2,
-      name: 'Agumbe Tang',
-      image: '/assets/images/alberto.png',
-      designation: 'Chief Taste Officer',
-      abbr: 'CTO',
-        featured: false,
-      description: 'Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.'
-    },
-    {
-      id: 3,
-      name: 'Alberto Somayya',
-      image: '/assets/images/third.png',
-      designation: 'Executive Chef',
-      abbr: 'EC',
-      featured: true,
-      description: 'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!'
-    }
+
+
+      description: 'White Panda is a managed marketplace for subject matter & branded communication.Being built with a model based on Language, Human Resources and Marketing, the company works with thousands of content creators to power content marketing for hundreds of leading brands. Some of our notable clients include Radisson, Apollo, Axis Bank, PNB Housing, three of the top 10 marketing agencies in India, and so on. The core team at White Panda is a diverse range of professionals who are alumni of institutions like IITs, BITS Pilani, and Goldman Sachs. The venture is funded by highly successful entrepreneurs, Tier-1 investors, and IIT Gandhinagar.Decision Makers want quality education. This demand cannot be catered by user-generated content. Businesses are waking up to the fact that in order to retain audiences, and thus generate ever-increasing revenue, they need to be the source of value, customers are looking for. Businesses, therefore, are supporting this need with the help of Editorial content and thus, are actively turning into publishers.White Panda has a chance to enable 40 lakh plus digital businesses to be premium publishers.'
+}
   ];

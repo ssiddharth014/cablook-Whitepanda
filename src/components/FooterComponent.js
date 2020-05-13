@@ -24,13 +24,13 @@ function Footer (props){
              <div className="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              121, Clear Water Bay Road<br />
-		              Clear Water Bay, Kowloon<br />
-		              HONG KONG<br />
-		              <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
-		              <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
-		              <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">
-                         confusion@food.net</a>
+		              3rd Cross,<br/> 1st Block,<br/> Koramangala, Bengaluru,<br/> Karnataka 560034, IN
+
+                      <br />
+		              <i className="fa fa-phone fa-lg"></i>: +(91)9818095205<br />
+		              
+		              <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:team@whitepanda.in">
+                         team@whitepanda.in</a>
                     </address>
                 </div>
                 <div className="col-12 col-sm-4 align-self-center">
@@ -46,7 +46,7 @@ function Footer (props){
             </div>
             <div className="row justify-content-center">             
                 <div className="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                    <p>© Copyright 2020 Siddharth singh</p>
                 </div>
             </div>
         </div>
