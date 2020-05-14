@@ -6,6 +6,8 @@ import {Link} from 'react-router-dom';
 import {Control,LocalForm,Errors,Field} from 'react-redux-form';
 
 
+
+
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
@@ -81,6 +83,7 @@ const isdate=(d)=>d && (d>=date);
                    <p>Phone :{booking.telnumber}</p>
                    <p>Issue Date :{booking.issue}</p>
                    <p>Return Date :{booking.ret}</p>
+                   
                    </CardBody>
                    </li>
                    );
@@ -131,9 +134,9 @@ const isdate=(d)=>d && (d>=date);
                 carId={props.car.id}
                 car={props.car}
                 status={props.status}/>
-
+                 
 			    </div>
-
+            
 			</div>
 			);
 		else
@@ -253,7 +256,7 @@ const isdate=(d)=>d && (d>=date);
                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
                                 <Col md={10}>
                                     <Control.text model=".telnum" id="telnum" name="telnum"
-                                        placeholder="Tel. Number"
+                                        placeholder="+919898989898"
                                         className="form-control"
                                         validators={{
                                             required, minLength: minLength(3), maxLength: maxLength(12), isNumber
